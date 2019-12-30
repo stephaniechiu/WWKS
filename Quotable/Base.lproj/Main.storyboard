@@ -39,7 +39,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="quoteText" destination="Adj-Og-N07" id="ZG4-eS-v1I"/>
+                        <outlet property="authorText" destination="oNC-h7-YB6" id="Fvy-fy-kOl"/>
+                        <outlet property="quoteText" destination="Adj-Og-N07" id="vIn-DL-fOl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
