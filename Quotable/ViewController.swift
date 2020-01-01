@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var mainQuote = [Content]()
+    var mainQuote: QuoteContents?
     
     @IBOutlet weak var quoteText: UILabel!
     @IBOutlet weak var authorText: UILabel!
@@ -27,9 +27,14 @@ class ViewController: UIViewController {
             (data, response, err) in
             guard let data = data else { return }
             do {
-                let mainQuote = try JSONDecoder().decode(Content.self, from: data)
+                self.mainQuote = try JSONDecoder().decode(QuoteContents.self, from: data)
                 DispatchQueue.main.async {
-                    print(mainQuote.author)
+                    if let mainQuote = self.mainQuote {
+                        print(mainQuote.results[0])
+                        
+                        // Uncomment this to see all of the results
+                        // print(mainQuote.results)
+                    }
                 }
             }
             catch let jsonErr {
