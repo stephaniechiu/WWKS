@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var mainQuote = [Content]()
+    var mainQuote: QuoteContents?
     
     @IBOutlet weak var quoteText: UILabel!
     @IBOutlet weak var authorText: UILabel!
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let apikey = "f33bd986587b3df9854280a2de17a6c3a260f0f6"
-        guard let url = URL(string: "https://api.paperquotes.com/apiv1/quotes/?author=Mahatma%20Gandhi") else {return}
+        guard let url = URL(string: "https://api.paperquotes.com/apiv1/quotes/?tags=love,life&curated=1") else {return}
         var request = URLRequest(url: url)
         request.setValue("Bearer \(apikey)", forHTTPHeaderField: "Authorization")
         request.httpMethod = "GET"
@@ -27,9 +27,15 @@ class ViewController: UIViewController {
             (data, response, err) in
             guard let data = data else { return }
             do {
-                let mainQuote = try JSONDecoder().decode(Content.self, from: data)
+                self.mainQuote = try JSONDecoder().decode(QuoteContents.self, from: data)
                 DispatchQueue.main.async {
-                    print(mainQuote.author)
+                    if let mainQuote = self.mainQuote {
+                        print(mainQuote.results[0].quote)
+                        print(mainQuote.results[0].author)
+                        
+                        self.quoteText.text = mainQuote.results[1].quote
+                        self.authorText.text = mainQuote.results[0].author
+                    }
                 }
             }
             catch let jsonErr {

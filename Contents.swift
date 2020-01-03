@@ -10,8 +10,9 @@ import Foundation
 
 struct QuoteContents: Codable {
     struct Contents: Codable {
-        var quotes: [Content]
+        var quote: String
+        var author: String
     }
-    var contents: [Contents]
+    var results: [Contents]
 }
 

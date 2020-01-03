@@ -13,7 +13,6 @@
 		904D8C6B23B957D900896042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 904D8C6923B957D900896042 /* Main.storyboard */; };
 		904D8C6D23B957DF00896042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 904D8C6C23B957DF00896042 /* Assets.xcassets */; };
 		904D8C7023B957DF00896042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 904D8C6E23B957DF00896042 /* LaunchScreen.storyboard */; };
-		904D8C7C23B96B8C00896042 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904D8C7B23B96B8C00896042 /* Content.swift */; };
 		904D8C7E23B96BE400896042 /* Contents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904D8C7D23B96BE400896042 /* Contents.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		904D8C6C23B957DF00896042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		904D8C6F23B957DF00896042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		904D8C7123B957DF00896042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		904D8C7B23B96B8C00896042 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		904D8C7D23B96BE400896042 /* Contents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Contents.swift; path = ../Contents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +60,6 @@
 			children = (
 				904D8C6323B957D900896042 /* AppDelegate.swift */,
 				904D8C6523B957D900896042 /* SceneDelegate.swift */,
-				904D8C7B23B96B8C00896042 /* Content.swift */,
 				904D8C7D23B96BE400896042 /* Contents.swift */,
 				904D8C6723B957D900896042 /* ViewController.swift */,
 				904D8C6923B957D900896042 /* Main.storyboard */,
@@ -148,7 +145,6 @@
 				904D8C7E23B96BE400896042 /* Contents.swift in Sources */,
 				904D8C6423B957D900896042 /* AppDelegate.swift in Sources */,
 				904D8C6623B957D900896042 /* SceneDelegate.swift in Sources */,
-				904D8C7C23B96B8C00896042 /* Content.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
