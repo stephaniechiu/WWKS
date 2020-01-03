@@ -30,11 +30,10 @@ class ViewController: UIViewController {
                 self.mainQuote = try JSONDecoder().decode(QuoteContents.self, from: data)
                 DispatchQueue.main.async {
                     if let mainQuote = self.mainQuote {
-                        print(mainQuote.results[0].quote)
-                        print(mainQuote.results[0].author)
+                        print(mainQuote.results[0])
                         
-                        self.quoteText.text = mainQuote.results[1].quote
-                        self.authorText.text = mainQuote.results[0].author
+                        // Uncomment this to see all of the results
+                        // print(mainQuote.results)
                     }
                 }
             }
