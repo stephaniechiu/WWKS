@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Quotable.xcodeproj">
+      location = "self:/Users/stephanie/Desktop/Swift/WhatWouldKanyeSay/WWKS.xcodeproj">
    </FileRef>
 </Workspace>

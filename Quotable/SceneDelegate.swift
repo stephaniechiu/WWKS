@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Quotable
+//  WWKS - What Would Kanye Say
 //
 //  Created by Stephanie on 12/29/19.
 //  Copyright © 2019 Stephanie Chiu. All rights reserved.
