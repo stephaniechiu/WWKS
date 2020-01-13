@@ -10,18 +10,40 @@ import UIKit
 
 class ViewController: UIViewController {
     var quote: Contents?
+    let backgroundColor = BackgroundColorProvider()
     
     @IBOutlet weak var quoteText: UILabel!
-    @IBAction func randomizeBtn(_ sender: UIButton) {
-        newQuote()
-    }
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var randomLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         newQuote()
     }
+    
+//Generates a new Kanye quote when button is tapped
+    @IBAction func randomizeBtn(_ sender: UIButton) {
+        newQuote()
+        
+        let randomColor = backgroundColor.randomColor()
+        view.backgroundColor = randomColor
+        
+        let red = UIColor(red: 176/255.0, green: 46/255.0, blue: 12/255.0, alpha: 1.0)
+        let gray = UIColor(red: 66/255.0, green: 62/255.0, blue: 65/255.0, alpha: 1.0)
+        let pink = UIColor(red: 153/255.0, green: 120/255.0, blue: 143/255.0, alpha: 1.0)
+    
+        if (randomColor == red || randomColor == gray || randomColor == pink) {
+            quoteText.textColor = UIColor.white
+            authorLabel.textColor = UIColor.white
+            randomLabel.textColor = UIColor.white
+        } else {
+            quoteText.textColor = UIColor.black
+            authorLabel.textColor = UIColor.black
+            randomLabel.textColor = UIColor.black
+        }
+    }
 
-//Generates random Kanye quote
+//Generates a Kanye quote
     func newQuote() {
         guard let url = URL(string: "https://api.kanye.rest") else {return}
         var request = URLRequest(url: url)
@@ -36,7 +58,7 @@ class ViewController: UIViewController {
                         if let kanyeQuote = self.quote {
                             print(kanyeQuote.quote)
                          
-                        self.quoteText.text = kanyeQuote.quote           
+                        self.quoteText.text = kanyeQuote.quote
                      }
                  }
              }
