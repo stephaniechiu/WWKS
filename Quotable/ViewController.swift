@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
     var quote: Contents?
@@ -14,15 +15,18 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var quoteText: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
-    @IBOutlet weak var randomLabel: UILabel!
+    @IBOutlet weak var randomizeBtnView: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        newQuote()
-    }
+            newQuote()
+            randomizeBtnView.alpha = 0.5
+        }
     
 //Generates a new Kanye quote when button is tapped
     @IBAction func randomizeBtn(_ sender: UIButton) {
+        sender.shake(duration: 0.5, values: [-12.0, 12.0, -12.0, 12.0, -6.0, 6.0, -3.0, 3.0, 0.0])
+        
         newQuote()
         
         let randomColor = backgroundColor.randomColor()
@@ -35,11 +39,9 @@ class ViewController: UIViewController {
         if (randomColor == red || randomColor == gray || randomColor == pink) {
             quoteText.textColor = UIColor.white
             authorLabel.textColor = UIColor.white
-            randomLabel.textColor = UIColor.white
         } else {
             quoteText.textColor = UIColor.black
             authorLabel.textColor = UIColor.black
-            randomLabel.textColor = UIColor.black
         }
     }
 

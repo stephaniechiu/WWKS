@@ -12,12 +12,11 @@
 		904D8C6823B957D900896042 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904D8C6723B957D900896042 /* ViewController.swift */; };
 		904D8C6B23B957D900896042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 904D8C6923B957D900896042 /* Main.storyboard */; };
 		904D8C6D23B957DF00896042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 904D8C6C23B957DF00896042 /* Assets.xcassets */; };
-		904D8C7023B957DF00896042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 904D8C6E23B957DF00896042 /* LaunchScreen.storyboard */; };
 		904D8C7E23B96BE400896042 /* Contents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904D8C7D23B96BE400896042 /* Contents.swift */; };
-		90B4140523C7DD7E00344993 /* KanyeFace.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B4140423C7DD7D00344993 /* KanyeFace.png */; };
+		90A80B3623D24F87000B2A47 /* KanyeFace.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A80B3523D24F87000B2A47 /* KanyeFace.png */; };
+		90A80B3C23D25B1F000B2A47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A80B3B23D25B1E000B2A47 /* LaunchScreen.storyboard */; };
 		90B4140723C8050300344993 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B4140623C8050300344993 /* BackgroundColor.swift */; };
-		90B4140923C87F9A00344993 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B4140823C87F9A00344993 /* Button.png */; };
-		90B4140E23C88A4A00344993 /* Rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B4140D23C88A4A00344993 /* Rectangle.png */; };
+		90EA5EEA23CFB96200962E40 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EA5EE923CFB96200962E40 /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,13 +26,12 @@
 		904D8C6723B957D900896042 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		904D8C6A23B957D900896042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		904D8C6C23B957DF00896042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		904D8C6F23B957DF00896042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		904D8C7123B957DF00896042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		904D8C7D23B96BE400896042 /* Contents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Contents.swift; path = ../Contents.swift; sourceTree = "<group>"; };
-		90B4140423C7DD7D00344993 /* KanyeFace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KanyeFace.png; sourceTree = "<group>"; };
+		90A80B3523D24F87000B2A47 /* KanyeFace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = KanyeFace.png; path = ../Quotable/KanyeFace.png; sourceTree = "<group>"; };
+		90A80B3B23D25B1E000B2A47 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90B4140623C8050300344993 /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
-		90B4140823C87F9A00344993 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
-		90B4140D23C88A4A00344993 /* Rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rectangle.png; sourceTree = "<group>"; };
+		90EA5EE923CFB96200962E40 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +69,11 @@
 				904D8C6523B957D900896042 /* SceneDelegate.swift */,
 				904D8C7D23B96BE400896042 /* Contents.swift */,
 				904D8C6723B957D900896042 /* ViewController.swift */,
+				90EA5EE923CFB96200962E40 /* Animation.swift */,
 				90B4140623C8050300344993 /* BackgroundColor.swift */,
 				904D8C6923B957D900896042 /* Main.storyboard */,
+				90A80B3B23D25B1E000B2A47 /* LaunchScreen.storyboard */,
 				904D8C6C23B957DF00896042 /* Assets.xcassets */,
-				904D8C6E23B957DF00896042 /* LaunchScreen.storyboard */,
 				904D8C7123B957DF00896042 /* Info.plist */,
 			);
 			path = Quotable;
@@ -83,9 +82,7 @@
 		90B4140A23C87FB800344993 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				90B4140D23C88A4A00344993 /* Rectangle.png */,
-				90B4140823C87F9A00344993 /* Button.png */,
-				90B4140423C7DD7D00344993 /* KanyeFace.png */,
+				90A80B3523D24F87000B2A47 /* KanyeFace.png */,
 			);
 			path = Icons;
 			sourceTree = "<group>";
@@ -148,12 +145,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90B4140923C87F9A00344993 /* Button.png in Resources */,
-				904D8C7023B957DF00896042 /* LaunchScreen.storyboard in Resources */,
 				904D8C6D23B957DF00896042 /* Assets.xcassets in Resources */,
+				90A80B3C23D25B1F000B2A47 /* LaunchScreen.storyboard in Resources */,
 				904D8C6B23B957D900896042 /* Main.storyboard in Resources */,
-				90B4140523C7DD7E00344993 /* KanyeFace.png in Resources */,
-				90B4140E23C88A4A00344993 /* Rectangle.png in Resources */,
+				90A80B3623D24F87000B2A47 /* KanyeFace.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +163,7 @@
 				904D8C7E23B96BE400896042 /* Contents.swift in Sources */,
 				90B4140723C8050300344993 /* BackgroundColor.swift in Sources */,
 				904D8C6423B957D900896042 /* AppDelegate.swift in Sources */,
+				90EA5EEA23CFB96200962E40 /* Animation.swift in Sources */,
 				904D8C6623B957D900896042 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,14 +177,6 @@
 				904D8C6A23B957D900896042 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		904D8C6E23B957DF00896042 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				904D8C6F23B957DF00896042 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
