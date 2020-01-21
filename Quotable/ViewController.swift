@@ -12,16 +12,63 @@ import Foundation
 class ViewController: UIViewController {
     var quote: Contents?
     let backgroundColor = BackgroundColorProvider()
+    let splashImage = UIImageView(image: UIImage(named: "KanyeFace"))
+    let splashView = UIView()
     
     @IBOutlet weak var quoteText: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var randomizeBtnView: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
             newQuote()
             randomizeBtnView.alpha = 0.5
+            titleLabel.alpha = 0.8
+        
+        //Splash view
+        splashView.backgroundColor = UIColor(red: 255/255, green: 244/255, blue: 107/255, alpha: 1.0)
+        view.addSubview(splashView)
+        splashView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height)
+        
+        splashImage.contentMode = .scaleAspectFit
+        splashView.addSubview(splashImage)
+        splashImage.frame = CGRect(x: splashView.frame.maxX - 250, y: splashView.frame.maxY - 630, width: 100, height: 128)
+    
+        randomizeBtnView.layer.cornerRadius = 8
+        
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.default
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            self.scaleDownAnimation()
         }
+    }
+    
+//Splash view animation
+    func scaleDownAnimation() {
+        UIView.animate(withDuration: 0.5, animations: {
+            self.splashImage.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+        }) { ( success ) in
+            self.scaleUpAnimation()
+        }
+    }
+    func scaleUpAnimation() {
+        UIView.animate(withDuration: 0.35, delay: 0.1, options: .curveEaseIn, animations: {
+            self.splashImage.transform = CGAffineTransform(scaleX: 5, y: 5)
+        }) { ( success ) in
+            self.removeSplashScreen()
+        }
+    }
+    func removeSplashScreen() {
+        splashView.removeFromSuperview()
+    }
     
 //Generates a new Kanye quote when button is tapped
     @IBAction func randomizeBtn(_ sender: UIButton) {
@@ -39,9 +86,11 @@ class ViewController: UIViewController {
         if (randomColor == red || randomColor == gray || randomColor == pink) {
             quoteText.textColor = UIColor.white
             authorLabel.textColor = UIColor.white
+            titleLabel.textColor = UIColor.white
         } else {
             quoteText.textColor = UIColor.black
             authorLabel.textColor = UIColor.black
+            titleLabel.textColor = UIColor.black
         }
     }
 

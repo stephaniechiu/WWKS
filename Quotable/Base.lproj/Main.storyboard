@@ -15,47 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rQe-me-LPa">
-                                <rect key="frame" x="20" y="287" width="374" height="201"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Would you believe in what you believe if you were the only one who believed it?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adj-Og-N07">
-                                        <rect key="frame" x="8" y="95" width="354" height="112"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" none="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="354" id="D4J-zI-Rzh"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Adj-Og-N07" secondAttribute="bottom" constant="8" id="ALb-qZ-6wX"/>
-                                    <constraint firstItem="Adj-Og-N07" firstAttribute="leading" secondItem="rQe-me-LPa" secondAttribute="leading" constant="8" id="afX-Ow-IAA"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Adj-Og-N07" secondAttribute="trailing" constant="12" id="d0U-jg-G7v"/>
-                                    <constraint firstAttribute="width" constant="374" id="rki-MG-Fo7"/>
-                                    <constraint firstAttribute="height" constant="201" id="sz4-Df-gzf"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" preservesSuperviewLayoutMargins="YES" text="— Kanye West" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkL-VA-ayD">
-                                <rect key="frame" x="80" y="531" width="122.5" height="17"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="17" id="EYA-Zk-A9V"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDz-gA-IDw">
-                                <rect key="frame" x="83.5" y="706" width="247" height="30"/>
+                                <rect key="frame" x="84" y="761" width="246" height="30"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="38b-JO-C4x"/>
-                                    <constraint firstAttribute="width" constant="247" id="8am-kF-jdU"/>
-                                    <constraint firstAttribute="height" constant="30" id="BTy-1d-Mzs"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="247" id="rSb-os-Rdq"/>
+                                    <constraint firstAttribute="height" constant="30" id="bGH-En-vci"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -67,17 +31,58 @@
                                     <action selector="randomizeBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IVx-mK-3Dh"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What   Would   Kanye   Say?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ooq-8H-Cn0">
+                                <rect key="frame" x="77" y="64" width="260" height="19"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQe-me-LPa">
+                                <rect key="frame" x="20" y="318" width="374" height="201"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you believe in what you believe if you were the only one who believed it?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adj-Og-N07">
+                                        <rect key="frame" x="8" y="102" width="354" height="100"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="354" id="VIm-0w-GKZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Adj-Og-N07" secondAttribute="bottom" constant="-1" id="RcX-2A-Dtz"/>
+                                    <constraint firstAttribute="trailing" secondItem="Adj-Og-N07" secondAttribute="trailing" constant="12" id="hac-kK-IDA"/>
+                                    <constraint firstItem="Adj-Og-N07" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rQe-me-LPa" secondAttribute="top" constant="95" id="mnF-13-C06"/>
+                                    <constraint firstAttribute="width" constant="374" id="rki-MG-Fo7"/>
+                                    <constraint firstAttribute="height" constant="201" id="sz4-Df-gzf"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="— Kanye West" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkL-VA-ayD">
+                                <rect key="frame" x="80" y="562" width="122.5" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="EYA-Zk-A9V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.59999999999999998" green="0.47058823529411764" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="PkL-VA-ayD" firstAttribute="top" secondItem="rQe-me-LPa" secondAttribute="bottom" constant="43" id="4Hw-gf-1lm"/>
+                            <constraint firstItem="RDz-gA-IDw" firstAttribute="centerX" secondItem="rQe-me-LPa" secondAttribute="centerX" id="4W8-W8-bta"/>
                             <constraint firstItem="rQe-me-LPa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BW1-wy-OXp"/>
-                            <constraint firstItem="rQe-me-LPa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="179" id="Le5-cM-ZhZ"/>
                             <constraint firstItem="PkL-VA-ayD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="S8f-JH-STr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RDz-gA-IDw" secondAttribute="bottom" constant="126" id="Zxk-W9-x17"/>
-                            <constraint firstItem="RDz-gA-IDw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g6z-TZ-EpJ"/>
+                            <constraint firstItem="RDz-gA-IDw" firstAttribute="centerX" secondItem="Ooq-8H-Cn0" secondAttribute="centerX" id="SeR-gR-oPd"/>
+                            <constraint firstItem="RDz-gA-IDw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="bKY-mR-EH8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rQe-me-LPa" secondAttribute="trailing" constant="20" id="gY2-Lu-oaP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="RDz-gA-IDw" secondAttribute="trailing" constant="166" id="wUH-vs-bTg"/>
+                            <constraint firstItem="Ooq-8H-Cn0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jXB-We-fiX"/>
+                            <constraint firstItem="rQe-me-LPa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="274" id="mbc-5G-YAI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RDz-gA-IDw" secondAttribute="bottom" constant="71" id="ohl-7E-5pg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -85,6 +90,7 @@
                         <outlet property="authorLabel" destination="PkL-VA-ayD" id="zhX-9e-m9P"/>
                         <outlet property="quoteText" destination="Adj-Og-N07" id="vIn-DL-fOl"/>
                         <outlet property="randomizeBtnView" destination="RDz-gA-IDw" id="6wk-FA-I13"/>
+                        <outlet property="titleLabel" destination="Ooq-8H-Cn0" id="iVs-5c-K5t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
