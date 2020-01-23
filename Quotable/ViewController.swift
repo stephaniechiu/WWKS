@@ -36,7 +36,6 @@ class ViewController: UIViewController {
         splashImage.frame = CGRect(x: splashView.frame.maxX - 250, y: splashView.frame.maxY - 630, width: 100, height: 128)
     
         randomizeBtnView.layer.cornerRadius = 8
-        
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -75,6 +74,12 @@ class ViewController: UIViewController {
         sender.shake(duration: 0.5, values: [-12.0, 12.0, -12.0, 12.0, -6.0, 6.0, -3.0, 3.0, 0.0])
         
         newQuote()
+        
+        //Fade in quote text when button is tapped
+        quoteText.alpha = 0
+        UIView.animate(withDuration: 0.3) {
+            self.quoteText.alpha = 1.0
+        }
         
         let randomColor = backgroundColor.randomColor()
         view.backgroundColor = randomColor

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		903F1BAA23D6ABE700B5ECB1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903F1BA923D6ABE700B5ECB1 /* Launch Screen.storyboard */; };
 		904D8C6423B957D900896042 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904D8C6323B957D900896042 /* AppDelegate.swift */; };
 		904D8C6623B957D900896042 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904D8C6523B957D900896042 /* SceneDelegate.swift */; };
 		904D8C6823B957D900896042 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904D8C6723B957D900896042 /* ViewController.swift */; };
@@ -20,7 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		903F1BA923D6ABE700B5ECB1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		904D8C6023B957D900896042 /* WWKS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWKS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		904D8C6323B957D900896042 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		904D8C6523B957D900896042 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 				904D8C6923B957D900896042 /* Main.storyboard */,
 				904D8C6C23B957DF00896042 /* Assets.xcassets */,
 				904D8C7123B957DF00896042 /* Info.plist */,
-				903F1BA923D6ABE700B5ECB1 /* Launch Screen.storyboard */,
 			);
 			path = Quotable;
 			sourceTree = "<group>";
@@ -147,7 +144,6 @@
 			files = (
 				904D8C6D23B957DF00896042 /* Assets.xcassets in Resources */,
 				904D8C6B23B957D900896042 /* Main.storyboard in Resources */,
-				903F1BAA23D6ABE700B5ECB1 /* Launch Screen.storyboard in Resources */,
 				90A80B3623D24F87000B2A47 /* KanyeFace.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
